@@ -2,18 +2,22 @@
 @use 'src/styles/utils/_animations' as *;
 
 .banner {
-  height: 60vh;
+  position: relative;
+  height: 50vh;
   background: url('./../assets/images/banner.jpeg');
   background-size: cover;
   background-position: center;
 }
 
 .card-container {
+  position: absolute;
+  top: 8rem;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 3%;
 }
 
 @mixin card() {

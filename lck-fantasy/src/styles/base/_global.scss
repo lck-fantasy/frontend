@@ -1,7 +1,9 @@
+@use 'src/styles/base/_colors' as *;
 @import './reset';
 
 * {
   box-sizing: border-box;
+  color: $white;
 }
 
 a {
