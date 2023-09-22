@@ -1,9 +1,8 @@
-import styles from '@/app/app-page.module.scss'
-
+import Banner from '@/components/Banner'
 export default function Home() {
   return (
-    <main>
-      <section className={styles.main} />
-    </main>
+    <>
+      <Banner />
+    </>
   )
 }
