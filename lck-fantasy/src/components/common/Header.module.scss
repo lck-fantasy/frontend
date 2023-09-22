@@ -1,0 +1,10 @@
+@use 'src/styles/base/_colors' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $transparent-black;
+  text-align: center;
+  font-size: 5rem;
+}
