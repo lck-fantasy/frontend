@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Chakra_Petch } from 'next/font/google'
 
 import App from '@/components/common/App'
 
-const inter = Inter({ subsets: ['latin'] })
+const chakaraPetch = Chakra_Petch({
+  weight: ['300', '400', '500'],
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'LCK Fantasy',
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={chakaraPetch.className}>
         <App>{children}</App>
       </body>
     </html>
