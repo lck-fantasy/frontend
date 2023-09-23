@@ -1,4 +1,9 @@
 $z-index: (
   toast: 1000,
   modal: 999,
+  header: 500,
 );
+
+@mixin z-index($key) {
+  z-index: map-get($z-index, $key);
+}

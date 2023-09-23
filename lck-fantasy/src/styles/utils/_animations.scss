@@ -1,0 +1,35 @@
+@mixin animation($delay, $duration, $animation, $speed) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-timing-function: $speed;
+}
+
+@mixin slide-in-up($speed: 0.5s, $distance: 100%, $delay: 0) {
+  @include animation($delay, $speed, slide-in-up, ease-in-out);
+
+  @keyframes slide-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY($distance);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+@mixin slide-in-down($speed: 0.5s, $distance: 100%, $delay: 0) {
+  @include animation($delay, $speed, slide-in-down, ease-in-out);
+  @keyframes slide-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-$distance);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}

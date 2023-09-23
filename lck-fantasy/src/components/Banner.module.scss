@@ -1,0 +1,64 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/_animations' as *;
+
+.banner {
+  position: relative;
+  height: 65vh;
+  padding-top: 6.5rem;
+  background: url('./../assets/images/banner.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner_slogan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.banner_slogan {
+  text-shadow: 0.1rem 0.1rem 0.2rem $transparent-black;
+  @include slide-in-down(0.7s, 20%);
+}
+
+.banner_card-container {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+
+@mixin card() {
+  max-width: 10.5rem;
+  min-width: 8rem;
+  height: auto;
+  border-radius: 0.35rem;
+  box-shadow: 0.1rem 0.8rem 1rem -0.5rem $black;
+}
+
+.card-top {
+  @include card();
+  @include slide-in-up(0.5s, 30%);
+}
+
+.card-jgl {
+  @include card();
+  @include slide-in-up(0.8s, 30%);
+}
+.card-mid {
+  @include card();
+  @include slide-in-up(1.1s, 30%);
+}
+.card-bot {
+  @include card();
+  @include slide-in-up(1.4s, 30%);
+}
+.card-spt {
+  @include card();
+  @include slide-in-up(1.7s, 30%);
+}

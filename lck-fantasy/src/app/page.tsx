@@ -1,7 +1,8 @@
+import Banner from '@/components/Banner'
 export default function Home() {
   return (
-    <main>
-      <h1>LCK Fantasy</h1>
-    </main>
+    <>
+      <Banner />
+    </>
   )
 }
