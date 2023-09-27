@@ -7,14 +7,32 @@
   gap: 5rem;
 }
 
-.logo-container {
+.banner_logo-container {
+  width: 100%;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   @include slide-in-down(1s, 20%);
   font-size: 12rem;
   font-weight: 500;
-  padding-left: 5rem;
+}
+
+.link {
+  font-size: 2rem;
+  border: 0.1rem solid $white;
+  padding: 1rem;
+  border-radius: 0.1rem;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
 }
 
 .banner_card-container {
