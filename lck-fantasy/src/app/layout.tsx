@@ -3,6 +3,10 @@ import { Chakra_Petch } from 'next/font/google'
 
 import App from '@/components/common/App'
 
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
+
 const chakaraPetch = Chakra_Petch({
   weight: ['300', '400', '500'],
   subsets: ['latin'],
