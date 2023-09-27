@@ -10,9 +10,9 @@ import jgl from '@/assets/images/jgl.png'
 export default function Banner() {
   return (
     <div className={styles.banner}>
-      <div className={styles['banner_slogan-container']}>
-        <h1 className={styles['banner_slogan']}>LCK Fantasy</h1>
-        <div>팀 만드러 드가는 버튼?</div>
+      <div className={styles['logo-container']}>
+        <div className={styles.lck}>LCK</div>
+        <div className={styles.fantasy}>FANTASY</div>
       </div>
       <div className={styles['banner_card-container']}>
         <Image src={top} alt="Top Card" className={styles['card-top']} />
