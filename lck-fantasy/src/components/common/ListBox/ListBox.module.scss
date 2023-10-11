@@ -5,13 +5,16 @@
   width: 20rem;
   height: 30rem;
   border-radius: 0.3rem;
-  background-color: $white-transparent;
+  background: $white-transparent;
+  border: 0.1rem solid $white-transparent;
+  box-shadow: 1rem 1rem 3rem $black-dark;
   text-align: center;
 }
 
 .list-box__title {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 1rem 0;
   border-top-left-radius: 0.3rem;
