@@ -1,0 +1,25 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/z-index' as *;
+
+.list-box {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 0.3rem;
+  background-color: $white-transparent;
+  text-align: center;
+}
+
+.list-box__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  font-size: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+  }
+}

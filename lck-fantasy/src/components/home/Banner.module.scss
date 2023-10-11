@@ -1,0 +1,39 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/_animations' as *;
+
+.banner {
+  width: 100%;
+}
+
+.banner__logo {
+  padding: 8rem 0 4rem 0;
+  background-image: radial-gradient(circle, $primary-transparent, $black);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  text-align: center;
+  text-shadow: 0.1rem 0.3rem 0.1rem $black-transparent;
+
+  @include slide-in-down(1s, 5%);
+
+  p {
+    font-size: 1.5rem;
+    line-height: 200%;
+  }
+}
+
+.banner__svgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 3rem 0;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+    g,
+    path {
+      fill: $white;
+    }
+  }
+}
