@@ -1,7 +1,8 @@
 $z-index: (
   toast: 1000,
   modal: 999,
-  header: 500,
+  cover: 10,
+  header: 5,
 );
 
 @mixin z-index($key) {
