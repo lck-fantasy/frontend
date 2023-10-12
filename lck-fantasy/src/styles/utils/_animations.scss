@@ -33,3 +33,39 @@
     }
   }
 }
+
+@mixin slide-in-left($speed: 0.5s, $distance: 100%, $delay: 0) {
+  @include animation($delay, $speed, slide-in-left, ease-in-out);
+  @keyframes slide-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX($distance);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX($distance * 0.5);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+  }
+}
+
+@mixin slide-in-right($speed: 0.5s, $distance: 100%, $delay: 0) {
+  @include animation($delay, $speed, slide-in-right, ease-in-out);
+  @keyframes slide-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-$distance);
+    }
+    50% {
+      opacity: 0.3;
+      transform: translateX(-$distance * 0.5);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+  }
+}

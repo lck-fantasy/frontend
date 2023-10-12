@@ -37,3 +37,9 @@
     }
   }
 }
+
+@for $i from 1 through 5 {
+  .banner__svgs svg:nth-child(#{$i}) {
+    @include slide-in-up(#{($i) * 0.5}s, 50%);
+  }
+}

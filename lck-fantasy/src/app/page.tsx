@@ -15,10 +15,10 @@ export default function Home() {
       <PlayerRank />
       <TeamUserRank />
       <Match />
-      <span className={styles['home__bg1']} />
+      {/* <span className={styles['home__bg1']} />
       <span className={styles['home__bg2']} />
       <span className={styles['home__bg3']} />
-      <span className={styles['home__bg4']} />
+      <span className={styles['home__bg4']} /> */}
     </div>
   )
 }
