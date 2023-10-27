@@ -1,6 +1,6 @@
 'use client'
 
-import styles from './Button.module.scss'
+import './Button.module.scss'
 
 type ButtonProps = {
   text: string // 버튼 텍스트
@@ -14,7 +14,7 @@ export default function Button({
   onClick = () => {},
 }: ButtonProps) {
   return (
-    <button className={`${styles.button} ${styles[size]}`} onClick={onClick}>
+    <button className={`button ${size}`} onClick={onClick}>
       {text}
     </button>
   )

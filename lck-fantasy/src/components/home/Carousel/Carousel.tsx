@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import styles from './Carousel.module.scss'
+import './Carousel.scss'
 import Image from 'next/image'
 
 import faker from '@/assets/images/faker.png'
@@ -30,17 +30,17 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className={styles.carousel} key={data[index].key}>
+    <div className="carousel" key={data[index].key}>
       {/* Todo: change to DIV tag */}
       <Image
         src={data[index].team}
         alt="주간 인기 선수 팀 로고"
-        className={styles['carousel__team']}
+        className="carousel__team"
       />
       <Image
         src={data[index].player}
         alt="주간 인기 선수 이미지"
-        className={styles['carousel__player']}
+        className="carousel__player"
       />
     </div>
   )

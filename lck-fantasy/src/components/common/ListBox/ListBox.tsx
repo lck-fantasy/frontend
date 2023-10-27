@@ -1,4 +1,4 @@
-import styles from './ListBox.module.scss'
+import './ListBox.scss'
 
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -13,10 +13,10 @@ interface Props {
 
 export default function ListBox({ title, url }: Props) {
   return (
-    <div className={styles['list-box']}>
-      <div className={styles['list-box__title']}>
+    <div className="list-box">
+      <div className="list-box__title">
         <h3>{title}</h3>
-        <Link href={url} className={styles['list-box__link']}>
+        <Link href={url} className="list-box__link">
           <FontAwesomeIcon icon={faChevronRight} color="salmon" />
         </Link>
       </div>

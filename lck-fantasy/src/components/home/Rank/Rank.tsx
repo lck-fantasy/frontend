@@ -1,9 +1,9 @@
-import styles from './Rank.module.scss'
+import './Rank.scss'
 import ListBox from '@/components/common/ListBox/ListBox'
 
 export default function Rank() {
   return (
-    <section className={styles.rank}>
+    <section className="rank">
       <article>
         <ListBox title={'유저 랭킹'} url={'#'} />
       </article>
