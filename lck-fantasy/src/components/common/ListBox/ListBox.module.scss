@@ -12,16 +12,42 @@
 
 .list-box__title {
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1.3rem 0;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   font-size: 1.5rem;
 
+  :first-child {
+    grid-column: 2/5;
+  }
+
+  :last-child {
+    grid-column: 5/6;
+  }
+}
+
+.list-box__link {
+  width: fit-content;
+  padding: 0.5rem 0.7rem;
+  border: 0.1rem solid $white-transparent;
+  border-radius: 0.1rem;
+  font-size: 1.1rem;
+  & > svg {
+    path {
+      color: $white-transparent;
+    }
+  }
+
   &:hover {
     cursor: pointer;
-    background-color: $white;
+
+    > svg {
+      path {
+        color: $white;
+      }
+    }
   }
 }

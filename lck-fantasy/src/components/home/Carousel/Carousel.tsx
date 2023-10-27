@@ -21,13 +21,13 @@ export default function Carousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((index + 1) % data.length)
+      setIndex((index) => (index + 1) % data.length)
     }, 5000)
 
     return () => {
       clearInterval(interval)
     }
-  }, [index])
+  }, [])
 
   return (
     <div className={styles.carousel} key={data[index].key}>

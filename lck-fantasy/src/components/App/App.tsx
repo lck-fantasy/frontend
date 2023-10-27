@@ -7,7 +7,7 @@ export default function App({ children }: { children: React.ReactNode }) {
   return (
     <div className={styles.app}>
       <Header />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   )
