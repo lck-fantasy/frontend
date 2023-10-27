@@ -15,12 +15,16 @@ export default function ListBox({ title, url }: Props) {
   return (
     <div className={styles['list-box']}>
       <div className={styles['list-box__title']}>
-        <p>{title}</p>
-        <Link href={url}>
-          <FontAwesomeIcon icon={faChevronRight} />
+        <h3>{title}</h3>
+        <Link href={url} className={styles['list-box__link']}>
+          <FontAwesomeIcon icon={faChevronRight} color="salmon" />
         </Link>
       </div>
       {/* <div>{children}</div> */}
     </div>
   )
+}
+
+{
+  /* <FontAwesomeIcon icon={faChevronRight} /> */
 }
