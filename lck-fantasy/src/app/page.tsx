@@ -12,6 +12,10 @@ export default function Home() {
       </section>
       <section>
         <TeamRank />
+        <TeamRank />
+        <TeamRank />
+        <TeamRank />
+        <TeamRank />
       </section>
     </div>
   )
