@@ -1,4 +1,4 @@
-import ListBox from '@/components/common/ListBox'
+import ListBox from '@/components/common/RankBox'
 
 export default function Match() {
   return (

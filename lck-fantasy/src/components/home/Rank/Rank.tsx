@@ -1,5 +1,5 @@
 import './Rank.scss'
-import ListBox from '@/components/common/ListBox/ListBox'
+import ListBox from '@/components/common/RankBox/RankBox'
 
 export default function Rank() {
   return (

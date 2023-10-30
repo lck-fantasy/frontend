@@ -1,0 +1,20 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/z-index' as *;
+
+.list-box {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 30rem;
+  padding: 2rem;
+  background: $white-transparent;
+  border: 0.1rem solid $white-transparent;
+  box-shadow: 1rem 1rem 3rem $black-dark;
+}
+
+.list-box__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}

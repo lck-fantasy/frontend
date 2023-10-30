@@ -1,0 +1,29 @@
+@use 'src/styles/base/_colors' as *;
+
+.player-rank-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.player-rank-table__header {
+  th {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+  }
+}
+
+.player-rank-table__body {
+  tr {
+    border-bottom: 0.01rem solid $white-transparent;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem 0;
+  }
+
+  img {
+    border-radius: 0.1rem;
+  }
+}

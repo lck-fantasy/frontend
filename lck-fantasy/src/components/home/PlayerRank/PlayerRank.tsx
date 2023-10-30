@@ -1,11 +1,91 @@
 import './PlayerRank.scss'
+import RankBox from '@/components/common/RankBox'
+import PlayerRankItem from '@/components/common/PlayerRankItem'
 
-import ListBox from '@/components/common/ListBox'
+type Player = {
+  image: string
+  name: string
+  pickCount: number
+  cost: number
+  position: string
+  team: {
+    uuid: string
+    name: string
+    image: string
+  }
+}
+
+type PlayerData = Player[]
+
+const data: PlayerData = [
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+]
 
 export default function PopularPlayer() {
   return (
     <section className="container">
-      <ListBox title={'주간 인기 선수'} url={'#'} />
+      <RankBox title={'player rank'} subTitle={'인기 선수'} url={'#'}>
+        <PlayerRankItem data={data} />
+      </RankBox>
     </section>
   )
 }
