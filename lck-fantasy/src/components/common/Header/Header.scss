@@ -1,0 +1,24 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/z-index' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(1rem);
+  @include z-index(header);
+  padding: 1rem 2rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__list {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

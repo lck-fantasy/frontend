@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ListBox from './ListBox'
+import ListBox from './RankBox'
 
 const meta = {
   title: 'Example/ListBox',

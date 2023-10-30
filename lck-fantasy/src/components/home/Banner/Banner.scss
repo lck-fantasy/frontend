@@ -1,0 +1,14 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/_animations' as *;
+
+.banner {
+  width: 100%;
+  padding: 8rem 0 4rem 0;
+  background-image: radial-gradient(circle, $primary-transparent, $black);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  text-align: center;
+  text-shadow: 0.1rem 0.3rem 0.1rem $black-transparent;
+
+  @include slide-in-down(1s, 5%);
+}
