@@ -1,4 +1,3 @@
-import './PlayerRank.scss'
 import RankBox from '@/components/common/RankBox'
 import PlayerRankItem from '@/components/common/PlayerRankItem'
 
@@ -15,57 +14,7 @@ type Player = {
   }
 }
 
-type PlayerData = Player[]
-
-const data: PlayerData = [
-  {
-    image: '/cat.png',
-    name: 'faker',
-    pickCount: 2343,
-    cost: 342,
-    position: '/cat.png',
-    team: {
-      uuid: '392342',
-      name: 'T1',
-      image: '/cat.png',
-    },
-  },
-  {
-    image: '/cat.png',
-    name: 'faker',
-    pickCount: 2343,
-    cost: 342,
-    position: '/cat.png',
-    team: {
-      uuid: '392342',
-      name: 'T1',
-      image: '/cat.png',
-    },
-  },
-  {
-    image: '/cat.png',
-    name: 'faker',
-    pickCount: 2343,
-    cost: 342,
-    position: '/cat.png',
-    team: {
-      uuid: '392342',
-      name: 'T1',
-      image: '/cat.png',
-    },
-  },
-  {
-    image: '/cat.png',
-    name: 'faker',
-    pickCount: 2343,
-    cost: 342,
-    position: '/cat.png',
-    team: {
-      uuid: '392342',
-      name: 'T1',
-      image: '/cat.png',
-    },
-  },
+const data: Player[] = [
   {
     image: '/cat.png',
     name: 'faker',
@@ -82,10 +31,8 @@ const data: PlayerData = [
 
 export default function PopularPlayer() {
   return (
-    <section className="container">
-      <RankBox title={'player rank'} subTitle={'인기 선수'} url={'#'}>
-        <PlayerRankItem data={data} />
-      </RankBox>
-    </section>
+    <RankBox title={'player rank'} subTitle={'인기 선수'} url={'#'}>
+      <PlayerRankItem data={data} />
+    </RankBox>
   )
 }

@@ -14,9 +14,11 @@ type Player = {
   }
 }
 
-type PlayerData = Player[]
+type PlayerRankItemProps = {
+  data: Player[]
+}
 
-export default function RankBoxItem(data: PlayerData) {
+export default function PlayerRankItem({ data }: PlayerRankItemProps) {
   return (
     <table className="player-rank-table">
       <thead className="player-rank-table__header">
@@ -29,7 +31,7 @@ export default function RankBoxItem(data: PlayerData) {
         <th>team</th>
       </thead>
       <tbody className="player-rank-table__body">
-        {data.map((player, idx) => {
+        {data?.map((player, idx) => {
           return (
             <tr key={idx}>
               <td>{idx + 1}</td>
