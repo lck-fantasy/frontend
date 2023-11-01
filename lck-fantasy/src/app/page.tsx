@@ -1,6 +1,7 @@
 import Banner from '@/components/home/Banner'
 import PlayerRank from '@/components/home/PlayerRank'
 import Carousel from '@/components/home/Carousel'
+import UserRank from '@/components/home/UserRank'
 import TeamRank from '@/components/home/TeamRank'
 export default function Home() {
   return (
@@ -19,10 +20,9 @@ export default function Home() {
         <Carousel />
       </section>
       <section>
-        <TeamRank />
-        <TeamRank />
-        <TeamRank />
-        <TeamRank />
+        <UserRank />
+      </section>
+      <section>
         <TeamRank />
       </section>
     </div>
