@@ -27,6 +27,30 @@ const data: Team[] = [
     win: 23,
     lose: 43,
   },
+  {
+    uuid: 'asdf',
+    name: 'string',
+    rank: 7,
+    image: '/cat.png',
+    win: 23,
+    lose: 43,
+  },
+  {
+    uuid: 'asdf',
+    name: 'string',
+    rank: 7,
+    image: '/cat.png',
+    win: 23,
+    lose: 43,
+  },
+  {
+    uuid: 'asdf',
+    name: 'string',
+    rank: 7,
+    image: '/cat.png',
+    win: 23,
+    lose: 43,
+  },
 ]
 
 export default function Rank() {
