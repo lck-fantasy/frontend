@@ -35,37 +35,31 @@
 }
 
 @mixin slide-in-left($speed: 0.5s, $distance: 100%, $delay: 0) {
-  @include animation($delay, $speed, slide-in-left, ease-in-out);
+  @include animation($delay, $speed, slide-in-left, ease-out);
   @keyframes slide-in-left {
     0% {
-      opacity: 0;
       transform: translateX($distance);
     }
-    50% {
-      opacity: 1;
-      transform: translateX($distance * 0.5);
-    }
     100% {
-      opacity: 0;
       transform: translateX(0%);
     }
   }
 }
 
-@mixin slide-in-right($speed: 0.5s, $distance: 100%, $delay: 0) {
-  @include animation($delay, $speed, slide-in-right, ease-in-out);
-  @keyframes slide-in-right {
+@mixin fade-in-out($speed: 0.5s, $distance: 100%, $delay: 0) {
+  @include animation($delay, $speed, fade-in-out, ease-out);
+  @keyframes fade-in-out {
     0% {
       opacity: 0;
-      transform: translateX(-$distance);
     }
-    50% {
-      opacity: 0.3;
-      transform: translateX(-$distance * 0.5);
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
     }
     100% {
       opacity: 0;
-      transform: translateX(0%);
     }
   }
 }

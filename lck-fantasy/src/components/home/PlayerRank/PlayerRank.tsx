@@ -1,5 +1,5 @@
 import RankBox from '@/components/common/RankBox'
-import PlayerRankItem from '@/components/common/PlayerRankItem'
+import PlayerRankItem from '@/components/home/PlayerRankItem'
 
 type Player = {
   image: string
@@ -15,6 +15,54 @@ type Player = {
 }
 
 const data: Player[] = [
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
+  {
+    image: '/cat.png',
+    name: 'faker',
+    pickCount: 2343,
+    cost: 342,
+    position: '/cat.png',
+    team: {
+      uuid: '392342',
+      name: 'T1',
+      image: '/cat.png',
+    },
+  },
   {
     image: '/cat.png',
     name: 'faker',
