@@ -1,0 +1,30 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/_animations' as *;
+
+.carousel {
+  position: relative;
+  min-width: 34rem;
+  height: 42rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 2rem;
+  @include fade-in-out(5s);
+}
+
+.carousel__content {
+  position: absolute;
+  top: 5%;
+  left: -40%;
+  @include slide-in-left(2s, 10%);
+}
+
+.carousel__div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 15rem;
+  min-height: 25rem;
+  content: '.';
+  border-bottom-left-radius: 2rem;
+  background-color: $black;
+}
