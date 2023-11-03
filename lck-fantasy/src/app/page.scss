@@ -1,3 +1,7 @@
+.home {
+  width: 100%;
+}
+
 .section-player {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -9,6 +13,7 @@
   & > :nth-child(2) {
     grid-column: 6/6;
   }
+  overflow: hidden;
 }
 
 .section-team {
@@ -21,4 +26,5 @@
 .section-user,
 .section-team {
   padding-bottom: 10rem;
+  width: 100%;
 }

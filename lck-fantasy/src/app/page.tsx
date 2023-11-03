@@ -22,7 +22,7 @@ export default function Home() {
         <UserRank />
       </section>
       <section className="section-team">
-        <Image src={map} alt="leage of lengeds map" width={900} height={650} />
+        <Image src={map} alt="leage of lengeds map" width={500} height={350} />
         <TeamRank />
       </section>
     </div>
