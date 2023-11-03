@@ -2,18 +2,18 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+
+  & > :nth-child(1) {
+    animation: rollingleft1 140s linear infinite;
+  }
+
+  & > :nth-child(2) {
+    animation: rollingleft2 140s linear infinite;
+  }
 }
 
 .user-rank-list {
   display: flex;
-
-  &.original {
-    animation: rollingleft1 140s linear infinite;
-  }
-
-  &.clone {
-    animation: rollingleft2 140s linear infinite;
-  }
 }
 
 .user-rank-item {

@@ -1,9 +1,6 @@
-'use client'
 import './UserRank.scss'
 import RankBox from '@/components/common/RankBox'
 import Image from 'next/image'
-
-import { useRef, useEffect } from 'react'
 
 type UserRank = {
   uuid: string
@@ -87,19 +84,15 @@ const data: UserRank[] = [
 ]
 
 export default function UserRank() {
-  const wrapper = useRef<HTMLDivElement>(null)
-  const userList = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const clone: HTMLDivElement = userList.current.cloneNode(true) // 자식 노드까지 복제 true
-    wrapper.current.appendChild(clone) // wrapper 자식으로 추가
-    userList.current.classList.add('original')
-    clone.classList.add('clone')
-  }, [])
-
   return (
     <RankBox title={'user rank'} subTitle={'명예의 전당'} url={'#'}>
-      <div className="user-rank-container" ref={wrapper}>
-        <div className="user-rank-list" ref={userList}>
+      <div className="user-rank-container">
+        <div className="user-rank-list">
+          {data.map((user) => {
+            return <UserRankItem key={user.uuid} user={user} />
+          })}
+        </div>
+        <div className="user-rank-list">
           {data.map((user) => {
             return <UserRankItem key={user.uuid} user={user} />
           })}
