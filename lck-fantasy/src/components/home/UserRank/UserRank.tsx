@@ -109,7 +109,9 @@ type UserRankItemProps = {
 function UserRankItem({ user }: UserRankItemProps) {
   return (
     <div className="user-rank-item">
-      <Image src={user.image} alt="user image" width={200} height={200} />
+      <div className="user-rank-item__image">
+        <Image src={user.image} alt="user image" width={200} height={200} />
+      </div>
       <div className="user-rank-item__info">
         <span>
           {user.rank}. {user.nickname}
