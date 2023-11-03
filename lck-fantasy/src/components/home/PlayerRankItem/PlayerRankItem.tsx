@@ -1,5 +1,6 @@
 import './PlayerRankItem.scss'
 import Image from 'next/image'
+import POSITION_TO_IMG from '@/constants/positions'
 
 type Player = {
   image: string
@@ -45,10 +46,10 @@ export default function PlayerRankItem({ data }: PlayerRankItemProps) {
               </td>
               <td>{player.name}</td>
               <td>{player.pickCount}</td>
-              <td>{player.cost} 억</td>
+              <td>{player.cost}</td>
               <td>
                 <Image
-                  src={player.position}
+                  src={POSITION_TO_IMG[player.position]}
                   alt="player position"
                   width={35}
                   height={35}

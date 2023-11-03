@@ -5,9 +5,7 @@ import PlayerRank from '@/components/home/PlayerRank'
 import Carousel from '@/components/home/Carousel'
 import UserRank from '@/components/home/UserRank'
 import TeamRank from '@/components/home/TeamRank'
-
 import map from '@/assets/images/map.png'
-
 export default function Home() {
   return (
     <div className="home">
