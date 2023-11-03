@@ -26,4 +26,38 @@
   img {
     border-radius: 0.1rem;
   }
+
+  & > :nth-child(1),
+  :nth-child(2),
+  :nth-child(3) {
+    & > :nth-child(1) {
+      position: relative;
+      &::before {
+        top: 20%;
+        left: 0;
+        position: absolute;
+        content: '';
+        height: 70%;
+        width: 30%;
+      }
+    }
+  }
+
+  & > :nth-child(1) {
+    & > :nth-child(1)::before {
+      background: linear-gradient($gold, $white-transparent);
+    }
+  }
+
+  & > :nth-child(2) {
+    & > :nth-child(1)::before {
+      background: linear-gradient($silver, $white-transparent);
+    }
+  }
+
+  & > :nth-child(3) {
+    & > :nth-child(1)::before {
+      background: linear-gradient($bronze, $white-transparent);
+    }
+  }
 }
