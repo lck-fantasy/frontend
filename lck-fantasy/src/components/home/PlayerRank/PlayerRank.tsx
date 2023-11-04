@@ -20,7 +20,7 @@ const data: Player[] = [
     name: 'faker',
     pickCount: 2343,
     cost: 342,
-    position: '/cat.png',
+    position: 'top',
     team: {
       uuid: '392342',
       name: 'T1',
@@ -32,7 +32,7 @@ const data: Player[] = [
     name: 'faker',
     pickCount: 2343,
     cost: 342,
-    position: '/cat.png',
+    position: 'mid',
     team: {
       uuid: '392342',
       name: 'T1',
@@ -44,7 +44,7 @@ const data: Player[] = [
     name: 'faker',
     pickCount: 2343,
     cost: 342,
-    position: '/cat.png',
+    position: 'jgl',
     team: {
       uuid: '392342',
       name: 'T1',
@@ -56,7 +56,7 @@ const data: Player[] = [
     name: 'faker',
     pickCount: 2343,
     cost: 342,
-    position: '/cat.png',
+    position: 'bot',
     team: {
       uuid: '392342',
       name: 'T1',
@@ -68,7 +68,7 @@ const data: Player[] = [
     name: 'faker',
     pickCount: 2343,
     cost: 342,
-    position: '/cat.png',
+    position: 'spt',
     team: {
       uuid: '392342',
       name: 'T1',

@@ -5,9 +5,7 @@ import PlayerRank from '@/components/home/PlayerRank'
 import Carousel from '@/components/home/Carousel'
 import UserRank from '@/components/home/UserRank'
 import TeamRank from '@/components/home/TeamRank'
-
 import map from '@/assets/images/map.png'
-
 export default function Home() {
   return (
     <div className="home">
@@ -22,7 +20,7 @@ export default function Home() {
         <UserRank />
       </section>
       <section className="section-team">
-        <Image src={map} alt="leage of lengeds map" width={900} height={650} />
+        <Image src={map} alt="leage of lengeds map" width={500} height={350} />
         <TeamRank />
       </section>
     </div>
