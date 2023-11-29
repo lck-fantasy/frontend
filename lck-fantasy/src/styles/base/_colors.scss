@@ -1,11 +1,12 @@
 $primary: rgb(37, 190, 255);
-$primary-transparent: rgba(37, 190, 255, 0.434);
+$primary-transparent: rgba(37, 190, 255, 0.619), rgba(37, 190, 255, 0.434),
+  rgba(37, 190, 255, 0.263);
 
 $black: #100f0f;
-$black-transparent: #100f0f10;
+$black-transparent: #100f0fab, #100f0f6c, #100f0f10;
 
 $white: #f8f9fa;
-$white-transparent: #ffffff05;
+$white-transparent: #ffffff87, #ffffff47, #ffffff05;
 
 $gold: #dfb13e;
 $silver: #d0cfcf;

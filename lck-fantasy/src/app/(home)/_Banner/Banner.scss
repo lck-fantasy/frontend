@@ -4,7 +4,11 @@
 .banner {
   width: 100%;
   padding: 7rem 0 4rem 0;
-  background-image: radial-gradient(circle, $primary-transparent, $black);
+  background-image: radial-gradient(
+    circle,
+    nth($primary-transparent, 2),
+    $black
+  );
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   text-align: center;

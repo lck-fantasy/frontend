@@ -45,19 +45,19 @@
 
   & > :nth-child(1) {
     & > :nth-child(1)::before {
-      background: linear-gradient($gold, $white-transparent);
+      background: linear-gradient($gold, nth($white-transparent, 3));
     }
   }
 
   & > :nth-child(2) {
     & > :nth-child(1)::before {
-      background: linear-gradient($silver, $white-transparent);
+      background: linear-gradient($silver, nth($white-transparent, 3));
     }
   }
 
   & > :nth-child(3) {
     & > :nth-child(1)::before {
-      background: linear-gradient($bronze, $white-transparent);
+      background: linear-gradient($bronze, nth($white-transparent, 3));
     }
   }
 }

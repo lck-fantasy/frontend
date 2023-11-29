@@ -43,9 +43,9 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $gold,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
@@ -54,9 +54,9 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $silver,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
@@ -65,9 +65,9 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $bronze,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
