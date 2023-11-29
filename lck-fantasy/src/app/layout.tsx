@@ -4,7 +4,7 @@ import { Chakra_Petch } from 'next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 
-import App from '@/components/App'
+import App from '@/components/common/App'
 
 config.autoAddCss = false
 

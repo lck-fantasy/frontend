@@ -1,6 +1,6 @@
 import './UserRank.scss'
 import RankBox from '@/components/common/RankBox'
-import Image from 'next/image'
+import UserRankItem from './_UserRankItem'
 
 type UserRank = {
   uuid: string
@@ -99,25 +99,5 @@ export default function UserRank() {
         </div>
       </div>
     </RankBox>
-  )
-}
-
-type UserRankItemProps = {
-  user: UserRank
-}
-
-function UserRankItem({ user }: UserRankItemProps) {
-  return (
-    <div className="user-rank-item">
-      <div className="user-rank-item__image">
-        <Image src={user.image} alt="user image" width={200} height={200} />
-      </div>
-      <div className="user-rank-item__info">
-        <span>
-          {user.rank}. {user.nickname}
-        </span>
-        <span>{user.score}</span>
-      </div>
-    </div>
   )
 }

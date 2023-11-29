@@ -2,12 +2,12 @@
 @use 'src/styles/utils/z-index' as *;
 
 .header {
+  @include z-index(header);
   position: fixed;
   top: 0;
   width: 100%;
   backdrop-filter: blur(1rem);
   padding: 1rem 2rem;
-  @include z-index(header);
 }
 
 .header__nav {
@@ -17,7 +17,7 @@
 }
 
 .header__nav__list {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;

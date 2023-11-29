@@ -1,5 +1,5 @@
 import RankBox from '@/components/common/RankBox'
-import TeamRankItem from '@/components/home/TeamRankItem'
+import TeamRankItem from '@/app/(home)/_TeamRank/_TeamRankItem'
 
 type Team = {
   uuid: string

@@ -1,11 +1,11 @@
-import './page.scss'
+import '../app/(home)/Home.scss'
 import Image from 'next/image'
-import Banner from '@/components/home/Banner'
-import PlayerRank from '@/components/home/PlayerRank'
-import Carousel from '@/components/home/Carousel'
-import UserRank from '@/components/home/UserRank'
-import TeamRank from '@/components/home/TeamRank'
-import Match from '@/components/home/Match'
+import Banner from '@/app/(home)/_Banner'
+import PlayerRank from '@/app/(home)/_PlayerRank'
+import Carousel from '@/app/(home)/_Carousel'
+import UserRank from '@/app/(home)/_UserRank'
+import TeamRank from '@/app/(home)/_TeamRank'
+import Match from '@/app/(home)/_Match'
 import map from '@/assets/images/map.png'
 export default function Home() {
   return (

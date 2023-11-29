@@ -43,9 +43,9 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $gold,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
@@ -54,9 +54,9 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $silver,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
@@ -65,33 +65,12 @@
     & > .user-rank-item__image::before {
       background: linear-gradient(
         45deg,
-        $white-transparent,
+        nth($white-transparent, 3),
         $bronze,
-        $white-transparent
+        nth($white-transparent, 3)
       );
     }
   }
-}
-
-.user-rank-item {
-  padding: 0 1rem;
-}
-
-.user-rank-item__image {
-  width: 12.5rem;
-  height: 12.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.user-rank-item__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-  font-size: 1.3rem;
-  word-spacing: 0.5rem;
 }
 
 @keyframes rollingleft1 {
