@@ -1,5 +1,5 @@
 import RankBox from '@/components/common/RankBox'
-import PlayerRankItem from '@/components/home/PlayerRankItem'
+import PlayerRankItem from '@/app/(home)/_PlayerRank/_PlayerRankItem'
 
 type Player = {
   image: string
