@@ -1,0 +1,46 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/custom' as *;
+.login-button {
+  @include glassBasicStyle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 20rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+  span > svg > path {
+    fill: $white;
+  }
+}
+
+.login-button:hover {
+  @include glassHoverStyle;
+
+  > .google > svg {
+    :nth-child(1) {
+      fill: #fff;
+    }
+    :nth-child(2) {
+      fill: #e33629;
+    }
+    :nth-child(3) {
+      fill: #f8bd00;
+    }
+    :nth-child(4) {
+      fill: #587dbd;
+    }
+    :nth-child(5) {
+      fill: #319f43;
+    }
+  }
+
+  > .kakao > svg > path {
+    fill: #ffc700;
+  }
+
+  .naver > svg > path {
+    fill: #0fa958;
+  }
+}

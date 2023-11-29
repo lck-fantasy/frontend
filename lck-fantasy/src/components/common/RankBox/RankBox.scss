@@ -3,13 +3,12 @@
 @use 'src/styles/utils/custom' as *;
 
 .list-box {
+  @include glassBasicStyle;
   display: grid;
   gap: 1.5rem;
   min-width: 35rem;
   min-height: 30rem;
   padding: 4rem 2rem;
-  background: $black-transparent;
-  @include glassBasicStyle;
 }
 
 .list-box__title {

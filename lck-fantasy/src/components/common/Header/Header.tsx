@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Modal from '@/components/common/Modal'
-import LoginForm from '@/components/common/LoginForm'
+import LoginForm from '@/components/home/LoginForm'
 
 export default function Header() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
