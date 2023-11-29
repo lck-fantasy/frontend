@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={chakaraPetch.className}>
         <App>{children}</App>
+        <div id="modal"></div>
       </body>
     </html>
   )

@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.section-player {
+.home-player {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding-top: 5rem;
@@ -16,15 +16,15 @@
   overflow: hidden;
 }
 
-.section-team {
+.home-team {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.section-player,
-.section-user,
-.section-team {
+.home-player,
+.home-user,
+.home-team {
   padding-bottom: 10rem;
   width: 100%;
 }

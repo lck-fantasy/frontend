@@ -1,5 +1,6 @@
 @use 'src/styles/base/_colors' as *;
 @use 'src/styles/utils/z-index' as *;
+@use 'src/styles/utils/custom' as *;
 
 .list-box {
   display: grid;
@@ -7,9 +8,8 @@
   min-width: 35rem;
   min-height: 30rem;
   padding: 4rem 2rem;
-  background: $white-transparent;
-  border: 0.1rem solid $white-transparent;
-  box-shadow: 1rem 1rem 3rem $black-dark;
+  background: $black-transparent;
+  @include glassBasicStyle;
 }
 
 .list-box__title {
