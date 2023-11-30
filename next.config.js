@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 // 배포시 prefix
-export const prefix =
+const prefix =
   process.env.NODE_ENV === 'production'
     ? 'https://lck-fantasy.github.io/frontend/'
     : ''
