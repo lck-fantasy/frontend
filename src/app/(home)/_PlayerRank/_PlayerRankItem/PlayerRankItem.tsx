@@ -1,9 +1,9 @@
 import './PlayerRankItem.scss'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import POSITION_TO_IMG from '@/constants/positions'
 
 type Player = {
-  image: string
+  image: StaticImageData
   name: string
   pickCount: number
   cost: number
@@ -11,7 +11,7 @@ type Player = {
   team: {
     uuid: string
     name: string
-    image: string
+    image: StaticImageData
   }
 }
 

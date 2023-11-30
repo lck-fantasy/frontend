@@ -1,8 +1,8 @@
 import './UserRankItem.scss'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 type UserRank = {
   uuid: string
-  image: string
+  image: StaticImageData
   nickname: string
   rank: number
   score: number

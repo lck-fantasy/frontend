@@ -1,11 +1,11 @@
 import './TeamRankItem.scss'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 type Team = {
   uuid: string
   name: string
   rank: number
-  image: string
+  image: StaticImageData
   win: number
   lose: number
 }

@@ -1,11 +1,12 @@
 import RankBox from '@/components/common/RankBox'
 import TeamRankItem from '@/app/(home)/_TeamRank/_TeamRankItem'
-
+import imgSrc from '@/assets/images/cat.png'
+import { StaticImageData } from 'next/image'
 type Team = {
   uuid: string
   name: string
   rank: number
-  image: string
+  image: StaticImageData
   win: number
   lose: number
 }
@@ -15,7 +16,7 @@ const data: Team[] = [
     uuid: 'asdf',
     name: 'string',
     rank: 7,
-    image: 'cat.png',
+    image: imgSrc,
     win: 23,
     lose: 43,
   },
@@ -23,7 +24,7 @@ const data: Team[] = [
     uuid: 'asdf',
     name: 'string',
     rank: 7,
-    image: 'cat.png',
+    image: imgSrc,
     win: 23,
     lose: 43,
   },
@@ -31,7 +32,7 @@ const data: Team[] = [
     uuid: 'asdf',
     name: 'string',
     rank: 7,
-    image: 'cat.png',
+    image: imgSrc,
     win: 23,
     lose: 43,
   },
@@ -39,7 +40,7 @@ const data: Team[] = [
     uuid: 'asdf',
     name: 'string',
     rank: 7,
-    image: 'cat.png',
+    image: imgSrc,
     win: 23,
     lose: 43,
   },
@@ -47,7 +48,7 @@ const data: Team[] = [
     uuid: 'asdf',
     name: 'string',
     rank: 7,
-    image: 'cat.png',
+    image: imgSrc,
     win: 23,
     lose: 43,
   },

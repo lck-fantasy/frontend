@@ -5,14 +5,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Modal from '@/components/common/Modal'
 import LoginForm from '@/components/home/LoginForm'
-
+import imgSrc from '@/assets/images/cat.png'
 export default function Header() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
 
   return (
     <header className="header">
       <nav className="header__nav">
-        <Image src={'cat.png'} alt="lck-logo" width={40} height={40} />
+        <Image src={imgSrc} alt="lck-logo" width={40} height={40} />
         <div className="header__nav__list">
           <Link href={'#'}>유저랭킹</Link>
           <Link href={'#'}>선수정보</Link>

@@ -1,8 +1,9 @@
 import RankBox from '@/components/common/RankBox'
 import PlayerRankItem from '@/app/(home)/_PlayerRank/_PlayerRankItem'
-
+import imgSrc from '@/assets/images/cat.png'
+import { StaticImageData } from 'next/image'
 type Player = {
-  image: string
+  image: StaticImageData
   name: string
   pickCount: number
   cost: number
@@ -10,13 +11,13 @@ type Player = {
   team: {
     uuid: string
     name: string
-    image: string
+    image: StaticImageData
   }
 }
 
 const data: Player[] = [
   {
-    image: 'cat.png',
+    image: imgSrc,
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -24,11 +25,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: 'cat.png',
+      image: imgSrc,
     },
   },
   {
-    image: 'cat.png',
+    image: imgSrc,
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -36,11 +37,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: 'cat.png',
+      image: imgSrc,
     },
   },
   {
-    image: 'cat.png',
+    image: imgSrc,
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -48,11 +49,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: 'ca.png',
+      image: imgSrc,
     },
   },
   {
-    image: 'cat.png',
+    image: imgSrc,
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -60,11 +61,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: 'cat.png',
+      image: imgSrc,
     },
   },
   {
-    image: 'cat.png',
+    image: imgSrc,
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -72,7 +73,7 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: 'cat.png',
+      image: imgSrc,
     },
   },
 ]
