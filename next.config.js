@@ -13,9 +13,9 @@ const path = require('path')
 const nextConfig = {
   output: 'export',
   trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
-  assetPrefix: './',
+  assetPrefix: '',
   images: {
-    loader: 'akamai',
+    loader: 'imgix',
     path: '',
   },
   sassOptions: {
