@@ -12,7 +12,6 @@ const prefix =
 const debug = process.env.NODE_ENV !== 'production'
 const path = require('path')
 const nextConfig = {
-  output: 'export', // npm export 명령어 대체
   trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
   assetPrefix: prefix,
   sassOptions: {
