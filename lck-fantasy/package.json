@@ -2,17 +2,15 @@
   "name": "lck-fantasy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lck-fantasy.github.io/frontend/",
   "scripts": {
     "dev": "next dev",
-    "build": "ANALYZE=true next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "prepare": "cd .. && husky install lck-fantasy/.husky",
     "storybook": "storybook dev -p 6006",
-
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://lck-fantasy.github.io/frontend/"
+    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -24,7 +22,6 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "eslint-config-next": "13.4.19",
-    "gh-pages": "^6.1.0",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -49,6 +46,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
