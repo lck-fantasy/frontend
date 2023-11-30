@@ -16,7 +16,7 @@ type Player = {
 
 const data: Player[] = [
   {
-    image: '/cat.png',
+    image: 'cat.png',
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -24,11 +24,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: '/cat.png',
+      image: 'cat.png',
     },
   },
   {
-    image: '/cat.png',
+    image: 'cat.png',
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -36,11 +36,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: '/cat.png',
+      image: 'cat.png',
     },
   },
   {
-    image: '/cat.png',
+    image: 'cat.png',
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -48,11 +48,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: '/cat.png',
+      image: 'ca.png',
     },
   },
   {
-    image: '/cat.png',
+    image: 'cat.png',
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -60,11 +60,11 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: '/cat.png',
+      image: 'cat.png',
     },
   },
   {
-    image: '/cat.png',
+    image: 'cat.png',
     name: 'faker',
     pickCount: 2343,
     cost: 342,
@@ -72,7 +72,7 @@ const data: Player[] = [
     team: {
       uuid: '392342',
       name: 'T1',
-      image: '/cat.png',
+      image: 'cat.png',
     },
   },
 ]

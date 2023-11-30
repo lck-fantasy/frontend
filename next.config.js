@@ -15,7 +15,7 @@ const nextConfig = {
   trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
   assetPrefix: './',
   images: {
-    loader: 'akamai',
+    loader: 'imgix',
     path: '',
   },
   sassOptions: {
