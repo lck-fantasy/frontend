@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="header__nav">
-        <Image src={imgSrc} alt="lck-logo" width={40} height={40} />
+        <Image src={imgSrc} alt="lck-logo" width={40} height={40} unoptimized />
         <div className="header__nav__list">
           <Link href={'#'}>유저랭킹</Link>
           <Link href={'#'}>선수정보</Link>

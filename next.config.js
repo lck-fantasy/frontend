@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
 
 // 배포시 prefix
 const prefix =
@@ -11,7 +11,7 @@ const prefix =
     : ''
 const path = require('path')
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
   trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
   assetPrefix: prefix,
   sassOptions: {
@@ -26,4 +26,5 @@ const nextConfig = {
   },
 }
 
-module.exports = withBundleAnalyzer(nextConfig)
+// module.exports = withBundleAnalyzer(nextConfig)
+module.exports = nextConfig
