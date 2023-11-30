@@ -4,9 +4,17 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+// 배포시 prefix
+export const prefix =
+  process.env.NODE_ENV === 'production'
+    ? 'https://lck-fantasy.github.io/frontend/'
+    : ''
+const debug = process.env.NODE_ENV !== 'production'
 const path = require('path')
 const nextConfig = {
-  output: 'export',
+  output: 'export', // npm export 명령어 대체
+  trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
+  assetPrefix: prefix,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
