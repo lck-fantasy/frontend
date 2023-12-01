@@ -1,0 +1,47 @@
+@use 'src/styles/base/_colors' as *;
+@use 'src/styles/utils/custom' as *;
+.match-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.match-title {
+  @include glassBasicStyle;
+  position: sticky;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+
+  > div:nth-child(1) {
+    text-align: center;
+    font-size: 17rem;
+    font-weight: bold;
+    color: nth($white-transparent, 3);
+  }
+}
+
+.match-title-detail {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    &:nth-child(1) {
+      font-size: 1.5rem;
+    }
+    &:nth-child(2) {
+      font-size: 5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.match-schedule {
+  width: 60%;
+}
