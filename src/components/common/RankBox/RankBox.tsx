@@ -17,7 +17,7 @@ export default function ListBox({ title, subTitle, url, children }: Props) {
       <div className="list-box__title">
         <h3>{title}</h3>
         <Link href={url}>
-          <FontAwesomeIcon icon={faChevronRight} color="salmon" />
+          <FontAwesomeIcon icon={faChevronRight} />
         </Link>
       </div>
       <p>{subTitle}</p>

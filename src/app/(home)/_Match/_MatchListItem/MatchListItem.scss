@@ -1,0 +1,39 @@
+@use 'src/styles/base/_colors' as *;
+.match-list {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+}
+
+.match-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.match-item__date {
+  font-size: 2rem;
+  font-weight: bold;
+  color: nth($white-transparent, 1);
+}
+
+.match-item__team {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.match-item__versus {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
