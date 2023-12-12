@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $black-transparent;
+  background-color: nth($black-transparent, 1);
   @include z-index(modal);
 }
 

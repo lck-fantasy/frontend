@@ -19,12 +19,12 @@ export default function Modal({
   useEffect(() => {
     if (isModalOpen) document.body.style.overflow = 'hidden'
     else document.body.style.overflow = 'auto'
-  }, [isModalOpen])
+  })
 
   if (!isModalOpen) return null
   return createPortal(
-    <div className="modal-backdrop">
-      <div className="modal">
+    <div className="modal-backdrop" onClick={closeModal}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="modal__button" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark} />
         </button>
