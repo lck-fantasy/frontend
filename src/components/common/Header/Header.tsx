@@ -7,7 +7,7 @@ import Modal from '@/components/common/Modal'
 import LoginForm from '@/components/home/LoginForm'
 import imgSrc from '@/assets/images/cat.png'
 export default function Header() {
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <header className="header">
@@ -19,11 +19,8 @@ export default function Header() {
           <Link href={'#'}>경기정보</Link>
           <Link href={'#'}>튜토리얼</Link>
         </div>
-        <button onClick={() => setIsLoginModalOpen(true)}>로그인</button>
-        <Modal
-          isModalOpen={isLoginModalOpen}
-          closeModal={() => setIsLoginModalOpen(false)}
-        >
+        <button onClick={() => setIsModalOpen(true)}>로그인</button>
+        <Modal openModal={isModalOpen} closeModal={() => setIsModalOpen(false)}>
           <LoginForm />
         </Modal>
       </nav>
