@@ -11,7 +11,6 @@ const prefix =
     : ''
 const path = require('path')
 const nextConfig = {
-  // output: 'export',
   trailingSlash: true, // 빌드시 폴더 구조 그대로 생성
   assetPrefix: prefix,
   sassOptions: {
@@ -27,4 +26,10 @@ const nextConfig = {
 }
 
 // module.exports = withBundleAnalyzer(nextConfig)
+
+// 배포시 output = 'export' 옵션 설정
+if (process.env.NODE_ENV === 'production') {
+  nextConfig.output = 'export'
+}
+
 module.exports = nextConfig
