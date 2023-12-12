@@ -1,36 +1,39 @@
 'use client'
 import './Modal.scss'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 interface ModalProps {
-  isModalOpen: boolean
+  openModal: boolean
   closeModal: () => void
   children: React.ReactNode
 }
 
-export default function Modal({
-  isModalOpen,
-  closeModal,
-  children,
-}: ModalProps) {
-  useEffect(() => {
-    if (isModalOpen) document.body.style.overflow = 'hidden'
-    else document.body.style.overflow = 'auto'
-  }, [isModalOpen])
+export default function Modal({ openModal, closeModal, children }: ModalProps) {
+  const modalRef = useRef<HTMLDialogElement>(null)
 
-  if (!isModalOpen) return null
+  useEffect(() => {
+    if (openModal) {
+      modalRef.current?.showModal()
+      document.body.style.overflow = 'hidden'
+    } else {
+      modalRef.current?.close()
+      document.body.style.overflow = 'auto'
+    }
+  }, [openModal])
+
+  if (!openModal) return null
   return createPortal(
-    <div className="modal-backdrop">
-      <div className="modal">
-        <button className="modal__button" onClick={closeModal}>
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
-        <div className="modal__content">{children}</div>
+    <dialog className="modal" ref={modalRef} onClick={closeModal}>
+      <button autoFocus className="modal__button" onClick={closeModal}>
+        <FontAwesomeIcon icon={faXmark} />
+      </button>
+      <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+        {children}
       </div>
-    </div>,
+    </dialog>,
     document.getElementById('modal'),
   )
 }
